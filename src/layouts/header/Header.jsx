@@ -23,15 +23,10 @@ const Header = () => {
                     </svg>
                 </button>
                 <input class="input" placeholder="Search" required="" type="text"></input>
-                <button class="reset" type="reset">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
             </form>
             <ul>
                 <li><a href="#"><CiShoppingCart className='header-icon'/></a></li>
-                <li><a href=""><CiHeart className='header-icon'/></a></li>
+                <li><a href="#"><CiHeart className='header-icon'/></a></li>
                 <li><a href="#"><CiUser className='header-icon'/></a></li>
             </ul>
         </nav>
