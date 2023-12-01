@@ -1878,6 +1878,11 @@
   dependencies:
     "loose-envify" "^1.1.0"
 
+"scroll-carousel@^1.2.7":
+  "integrity" "sha512-tiXdee3QJgyaUXVA5cW4s1qUNdpPG3jGFsoJ1Jc2kDS4X8ipIvwkPwgZSF9SYszCvF9BRxGduJDQunMWBzavdw=="
+  "resolved" "https://registry.npmjs.org/scroll-carousel/-/scroll-carousel-1.2.7.tgz"
+  "version" "1.2.7"
+
 "semver@^6.3.1":
   "integrity" "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA=="
   "resolved" "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz"
