@@ -67,3 +67,48 @@ nav{
     color: $fade_white;
     letter-spacing: 2px;
   }
+
+
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+@media screen and (max-width: 1024px) {
+  nav{
+    padding: 25px 90px 25px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .landingPage h2 {
+    position: absolute;
+    top: 38%;
+    left: 0%;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .header-icon {
+    font-size: 32px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+}
+
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+@media screen and (max-width: 600px) {
+  nav{
+    padding: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form {
+    display: none;
+  }
+
+  .cart, .user, .heart, .logo-icon {
+    display: none;
+  }
+}
