@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.scss';
 import Featured from '@/layouts/featured/Featured';
+import Authors from '@/layouts/authors/Authors';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         </h2>
       </div>
       <Featured />
+      <Authors />
     </section>
   )
 }
