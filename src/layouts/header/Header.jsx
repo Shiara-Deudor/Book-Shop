@@ -14,7 +14,7 @@ const Header = () => {
                 <li><a href=""><GiHamburgerMenu className='header-icon'/></a></li>
             </ul>
             <ul>
-                <li><ImBooks className='header-icon'/> <a href="#" className='logo'>bibliophile</a></li>
+                <li><ImBooks className='header-icon logo-icon'/> <a href="#" className='logo'>bibliophile</a></li>
             </ul>
             <form class="form">
                 <button>
@@ -25,9 +25,9 @@ const Header = () => {
                 <input class="input" placeholder="Search" required="" type="text"></input>
             </form>
             <ul>
-                <li><a href="#"><CiShoppingCart className='header-icon'/></a></li>
-                <li><a href="#"><CiHeart className='header-icon'/></a></li>
-                <li><a href="#"><CiUser className='header-icon'/></a></li>
+                <li><a href="#"><CiShoppingCart className='header-icon cart'/></a></li>
+                <li><a href="#"><CiHeart className='header-icon heart'/></a></li>
+                <li><a href="#"><CiUser className='header-icon user'/></a></li>
             </ul>
         </nav>
     </header>

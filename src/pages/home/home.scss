@@ -37,3 +37,33 @@
     text-shadow: 3px 3px $fade_white;
   }
 }
+
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+@media screen and (max-width: 1024px) {
+  .landingPage {
+    height: 91vh;
+  }
+
+  .landingPage h2 {
+    position: absolute;
+    top: 38%;
+    left: 0%;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+/* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+@media screen and (max-width: 600px) {
+  .landingPage {
+    height: 90vh;
+  }
+
+  .landingPage h2 {
+    position: absolute;
+    top: 38%;
+    left: 0%;
+    text-align: center;
+    font-size: 24px;
+  }
+}
