@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss';
-import Featured from '../../layouts/featured/Featured';
+import Featured from '@/layouts/featured/Featured';
 
 const Home = () => {
   return (
