@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import '@/styles/index.scss'
+import Header from './layouts/header/header'
+import Home from './pages/home/home'
 
 function App() {
 
   return (
     <>
-      <div className='app'>
-        sample
-      </div>
+      <Header />
+      <Home />
     </>
   )
 }
