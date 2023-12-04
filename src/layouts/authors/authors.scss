@@ -97,3 +97,38 @@
     padding: 10px;
     letter-spacing: 1px;
 }
+
+
+/* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
+@media screen and (max-width: 1024px) {
+    .favorite-authors h1 {
+        padding-top: 9rem;
+        font-size: 4rem;
+    }
+  }
+  
+  /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
+  @media screen and (max-width: 600px) {
+    .favorite-authors h1 {
+        padding-top: 9rem;
+        font-size: 2.5rem;
+    }
+
+    .favorite-authors h3 {
+        margin-top: 2rem;
+        font-size: 20px;
+        font-weight: 150;
+    }
+    
+    .favorite-authors p {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+    .authors {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 245%;
+    }
+  }
