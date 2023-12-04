@@ -1,0 +1,95 @@
+@import'@/styles/index';
+
+.bestselling {
+    background-color: $light_sand;
+    height: 100vh;
+    width: 100%;
+}
+
+.bestselling h2 {
+    font-size: 50px;
+    letter-spacing: 12px;
+    word-spacing: 5px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.bestselling-container {
+    width: 85%;
+    margin: auto;
+    position: absolute;
+    top: 323%;
+    left: 7%;
+}
+
+.bestselling-card {
+    margin-top: 20px;
+}
+
+.card-container {
+    background: $fade_white;
+    height: 450px;
+    color: black;
+    border-radius: 15px;
+}
+
+.bestselling-img-container {
+    border-radius: 10px;
+    background: $brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+}
+
+.bestselling-img {
+    height: 80%;
+    width: 50%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.bestselling-img:hover {
+    box-shadow: 0 0 20px rgba(244, 135, 106, 0.7);
+    transform: scale(1.1);
+}
+
+.bestselling-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+}
+
+.bestselling-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.bestselling-btn {
+    background: $sand;
+    color: $fade_white;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border-color: $brown;
+    position: absolute;
+    bottom: 5%;
+}
+
+.slick-slide > div {
+    margin: 0 5px;
+}
+
+.bestselling-descrip {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.bestselling-btn:hover {
+    background-color: $light_brown;
+    cursor: pointer;
+}
