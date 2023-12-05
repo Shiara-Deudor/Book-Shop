@@ -4,23 +4,24 @@
     background-color: $light_sand;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .bestselling h2 {
+    margin-top: 3rem;
     font-size: 50px;
     letter-spacing: 12px;
     word-spacing: 5px;
     font-weight: 500;
     text-align: center;
-    padding-top: 5rem;
 }
 
 .bestselling-container {
     width: 85%;
     margin: auto;
-    position: absolute;
-    top: 323%;
-    left: 7%;
 }
 
 .bestselling-card {
@@ -96,16 +97,13 @@
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
 @media screen and (max-width: 1024px) {
-    .bestselling h2 {
-        padding-top: 16rem;
+    .bestselling {
+        gap: 2px;
     }
 
-    .bestselling-container {
-        width: 90%;
-        margin: auto;
-        position: absolute;
-        top: 335%;
-        left: 5%;
+    .bestselling h2 {
+        font-size: 4rem;
+        margin-top: 20rem;
     }
 
     .card-container {
@@ -114,53 +112,39 @@
         color: black;
         border-radius: 15px;
     }
+
+    .bestselling-container {
+        margin-bottom: 25rem;
+    }
   }
   
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
 @media screen and (max-width: 600px) {
+    .bestselling {
+        gap: 2rem;
+    }
     .bestselling h2 {
-        padding-top: 15rem;
-        font-size: 40px;
+        font-size: 30px;
+        letter-spacing: 7px;
+        word-spacing: 2px;
     }
 
     .bestselling-card {
         margin-top: 20px;
     }
     
-    .bestselling-container {
-        width: 85%;
-        margin: auto;
-        position: absolute;
-        top: 345%;
-        left: 7%;
-    }
-    
     .card-container {
-        background: $fade_white;
         height: 200px;
-        color: black;
-        border-radius: 15px;
     }
     
     .bestselling-img-container {
-        border-radius: 10px;
         background: $light_brown;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 200px;
     }
     
     .bestselling-img {
         height: 75%;
         width: 80%;
-        border-radius: 10px;
-        transition: 0.2s;
-    }
-    
-    .bestselling-img:hover {
-        box-shadow: 0 0 20px rgba(244, 135, 106, 0.7);
-        transform: scale(1.1);
     }
     
     .bestselling-content {

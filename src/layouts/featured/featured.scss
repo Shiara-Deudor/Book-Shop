@@ -4,8 +4,11 @@
     background-color: $light_sand;
     height: 100vh;
     width: 100%;
-    text-align: left;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
 }
 
 .featured h4 {
@@ -22,10 +25,8 @@
 }
 
 .featured-content {
-    position: absolute;
-    left: 10%;
-    top: 134%;
     letter-spacing: 2px;
+    text-align: left;
 }
 
 .featured-btn {
@@ -47,20 +48,11 @@
     color: $dark_brown;
 }
 
-
-.featured ul li{
-    display: inline-block;
-    margin-right: 14rem;
-}
-
 .featured-img {
     display: flex;
     overflow: hidden;
     height: 400px;
     width: 300px;
-    position: absolute;
-    right: 13%;
-    top: 123%;
     border: 10px solid $dark_brown;
 }
 
@@ -69,75 +61,59 @@
     transition: transform 0.5s ease; 
 }
 
-.featured-img img:hover {
-    transform: scale(0.8);
+.featured-img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border: 4px solid $light_brown;
+    border: 10px solid $sand;
 }
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
 @media screen and (max-width: 1024px) {
     .featured {
-        text-align: center;
+        flex-direction: column;
+        gap: 4rem;
     }
 
     .featured h4 {
         font-size: 22px;
-        margin-bottom: 15px;
     }
     
     .featured-content {
-        position: absolute;
-        left: 17%;
-        top: 160%;
-        letter-spacing: 2px;
+        text-align: center;
     }
 
     .featured-img {
-        display: flex;
-        overflow: hidden;
-        height: 450px;
-        width: 350px;
-        position: absolute;
-        right: 30%;
-        top: 120%;
-        border: 10px solid $dark_brown;
+        height: 480px;
+        width: 380px;
     }
   }
   
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
 @media screen and (max-width: 600px) {
     .featured {
-        text-align: center;
+        flex-direction: column;
+        gap: 3rem;
     }
 
     .featured h4 {
         font-size: 17px;
-        margin-bottom: 15px;
     }
 
     .featured h2, h1 {
-        color: $dark_brown;
         font-size: 30px;
-        word-spacing: 1px;
-        margin-bottom: 18px;
     }
     
     .featured-content {
-        position: absolute;
-        left: 7%;
-        top: 160%;
-        letter-spacing: 2px;
+        text-align: center;
     }
 
     .featured-img {
-        display: flex;
-        overflow: hidden;
         height: 320px;
         width: 220px;
-        position: absolute;
-        right: 22%;
-        top: 120%;
         border: 10px solid $dark_brown;
+    }
+
+    .featured-btn {
+        padding: 10px 45px;
+        font-size: 15px;
     }
 }
