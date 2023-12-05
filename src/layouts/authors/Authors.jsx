@@ -22,9 +22,11 @@ const Authors = () => {
       
   return (
     <section className='favorite-authors'>
-        <h1>Favorite Authors</h1>
-        <h3>"Either write something worth reading or do something worth writing."</h3>
-        <p>Benjamin Franklin</p>
+        <div>
+            <h1>Favorite Authors</h1>
+            <h3>"Either write something worth reading or do something worth writing."</h3>
+            <p>Benjamin Franklin</p>
+        </div>
         <div class="authors">
             <div class="author">
                 <img src={AUTHOR1} />
