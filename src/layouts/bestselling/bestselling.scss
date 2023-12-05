@@ -8,24 +8,81 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
 
-.bestselling h2 {
-    margin-top: 3rem;
-    font-size: 50px;
-    letter-spacing: 12px;
-    word-spacing: 5px;
-    font-weight: 500;
-    text-align: center;
-}
+    h2 {
+        margin-top: 3rem;
+        font-size: 50px;
+        letter-spacing: 12px;
+        word-spacing: 5px;
+        font-weight: 500;
+        text-align: center;
+    }
 
-.bestselling-container {
-    width: 85%;
-    margin: auto;
-}
+    &-container {
+        width: 85%;
+        margin: auto;
+    }
 
-.bestselling-card {
-    margin-top: 20px;
+    &-card {
+        margin-top: 20px;
+    }
+
+    &-img-container {
+        border-radius: 10px;
+        background: $brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 230px;
+    }
+
+    &-img {
+        height: 80%;
+        width: 50%;
+        border-radius: 10px;
+        transition: 0.2s;
+    }
+
+    &-img:hover {
+        box-shadow: 0 0 20px rgba(244, 135, 106, 0.7);
+        transform: scale(1.1);
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    &-title {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    &-btn {
+        background: $sand;
+        color: $fade_white;
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        border-color: $brown;
+        position: absolute;
+        bottom: 5%;
+    }
+
+    &-btn:hover {
+        background-color: $light_brown;
+        cursor: pointer;
+    }
+
+    &-descrip {
+        margin-top: 15px;
+        font-size: 13px;
+    }
 }
 
 .card-container {
@@ -35,75 +92,25 @@
     border-radius: 15px;
 }
 
-.bestselling-img-container {
-    border-radius: 10px;
-    background: $brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 230px;
-}
-
-.bestselling-img {
-    height: 80%;
-    width: 50%;
-    border-radius: 10px;
-    transition: 0.2s;
-}
-
-.bestselling-img:hover {
-    box-shadow: 0 0 20px rgba(244, 135, 106, 0.7);
-    transform: scale(1.1);
-}
-
-.bestselling-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    padding: 4px;
-}
-
-.bestselling-title {
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.bestselling-btn {
-    background: $sand;
-    color: $fade_white;
-    font-size: 14px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    border-color: $brown;
-    position: absolute;
-    bottom: 5%;
-}
-
 .slick-slide > div {
     margin: 0 5px;
 }
 
-.bestselling-descrip {
-    margin-top: 15px;
-    font-size: 13px;
-}
-
-.bestselling-btn:hover {
-    background-color: $light_brown;
-    cursor: pointer;
-}
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-@media screen and (max-width: 1024px) {
+$breakpoint-tablet: 1024px;
+@media (max-width: $breakpoint-tablet) {
     .bestselling {
         gap: 2px;
-    }
 
-    .bestselling h2 {
-        font-size: 4rem;
-        margin-top: 20rem;
+        h2 {
+            font-size: 4rem;
+            margin-top: 20rem;
+        }
+
+        &-container {
+            margin-bottom: 25rem;
+        }
     }
 
     .card-container {
@@ -112,43 +119,41 @@
         color: black;
         border-radius: 15px;
     }
-
-    .bestselling-container {
-        margin-bottom: 25rem;
-    }
   }
   
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
-@media screen and (max-width: 600px) {
+$breakpoint-phone: 600px;
+@media (max-width: $breakpoint-phone){
     .bestselling {
         gap: 2rem;
-    }
-    .bestselling h2 {
-        font-size: 30px;
-        letter-spacing: 7px;
-        word-spacing: 2px;
-    }
 
-    .bestselling-card {
-        margin-top: 20px;
+        h2 {
+            font-size: 30px;
+            letter-spacing: 7px;
+            word-spacing: 2px;
+        }
+
+        &-card {
+            margin-top: 20px;
+        }
+
+        &-img-container {
+            background: $light_brown;
+            height: 200px;
+        }
+
+        &-img {
+            height: 75%;
+            width: 80%;
+        }
+
+        &-content {
+            display: none;
+        }
     }
     
     .card-container {
         height: 200px;
-    }
-    
-    .bestselling-img-container {
-        background: $light_brown;
-        height: 200px;
-    }
-    
-    .bestselling-img {
-        height: 75%;
-        width: 80%;
-    }
-    
-    .bestselling-content {
-        display: none;
     }
     
     .slick-slide > div {

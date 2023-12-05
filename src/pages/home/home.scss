@@ -38,14 +38,16 @@
 }
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-@media screen and (max-width: 1024px) {
+$breakpoint-tablet: 1024px;
+@media (max-width: $breakpoint-tablet) {
   .landingPage h2 {
     font-size: 50px;
   }
 }
 
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
-@media screen and (max-width: 600px) {
+$breakpoint-phone: 600px;
+@media (max-width: $breakpoint-phone) {
   .landingPage h2 {
     font-size: 24px;
   }

@@ -1,44 +1,50 @@
 @import '@/styles/index.scss';
 
-.footer-feat {
-    background-color: $brown;
-    color: $fade_white;
-    display: flex;
-    align-items: center;
+.footer {
+
+    &-feat {
+        background-color: $brown;
+        color: $fade_white;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &-container {
+        margin: 50px 60px 50px 60px;
+    }
+    
+    &-container h3 {
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    
+    &-container p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding: 25px 50px 25px 50px;
+    }
+    
+    &-icons {
+        font-size: 40px;
+    }
+    
+    &-icons ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    &-icons .icon:hover {
+        color: $light_sand;
+        cursor: pointer;
+    }
 }
 
-.footer-container {
-    margin: 50px 60px 50px 60px;
-}
-
-.footer-container h3 {
-    font-size: 2rem;
-    letter-spacing: 10px;
-}
-
-.footer-container p {
-    font-size: 1rem;
-    letter-spacing: 2px;
-    padding: 25px 50px 25px 50px;
-}
-
-.footer-icons {
-    font-size: 40px;
-}
-
-.footer-icons ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.footer-icons .icon:hover {
-    color: $light_sand;
-    cursor: pointer;
-}
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-@media screen and (max-width: 1024px) {
+$breakpoint-tablet: 1024px;
+@media (max-width: $breakpoint-tablet) {
     .footer-container p {
         font-size: 1rem;
         letter-spacing: 2px;
@@ -47,14 +53,15 @@
   }
   
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
-@media screen and (max-width: 600px) {
-    .footer-container p {
-        font-size: 12px;
-        letter-spacing: 2px;
-        padding: 20px 10px 20px 10px;
-    }
-
+$breakpoint-phone: 600px;
+@media (max-width: $breakpoint-phone) {
     .footer-container {
         margin: 35px 45px 35px 45px;
+
+        p {
+            font-size: 12px;
+            letter-spacing: 2px;
+            padding: 20px 10px 20px 10px;
+        }
     }
 }

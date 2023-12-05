@@ -70,7 +70,8 @@ nav{
 
 
 /* -------------- MEDIA QUERIES (MEDIUM DEVICES) -------------- */
-@media screen and (max-width: 1024px) {
+$breakpoint-tablet: 1024px;
+@media (max-width: $breakpoint-tablet){
   nav{
     padding: 25px 90px 25px 90px;
     display: flex;
@@ -96,7 +97,8 @@ nav{
 }
 
 /* -------------- MEDIA QUERIES (SMALL DEVICES) -------------- */
-@media screen and (max-width: 600px) {
+$breakpoint-phone: 600px;
+@media (max-width: $breakpoint-phone) {
   nav{
     padding: 0 0 0 20px;
     display: flex;
