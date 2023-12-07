@@ -1,6 +1,6 @@
 import React from 'react';
 import './booklist.scss';
-import BookCard from '../../components/bookcard/BookCard'
+import BookCard from '@/components/bookcard/BookCard'
 
 
 const BookList = ({ booksData }) => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './shop.scss';
 import axios from 'axios';
-import BookList from '../../layouts/booklist/BookList';
+import BookList from '@/layouts/booklist/BookList';
 
 const Shop = () => {
   const [booksData, setBooksData] = useState([]);
